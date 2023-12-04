@@ -1,0 +1,122 @@
+@import "../../styles/variables.scss";
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.footer-title {
+  color: var(--Solid-Heading, #42446e);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin-right: 140px;
+}
+
+.nav-items-up {
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    li {
+      width: 200px;
+      margin-right: 20px;
+      font-size: 20px;
+      color: $port-font-primary;
+      font-weight: 500;
+      line-height: 26px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          // Adicionar estilos ao passar o mouse sobre o link
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.nav-items-down {
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    li {
+      margin-right: 50px;
+      font-size: 20px;
+      color: $port-font-primary;
+      font-weight: 500;
+      line-height: 26px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          // Adicionar estilos ao passar o mouse sobre o link
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.nav-icons {
+  cursor: pointer;
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+  }
+}
+
+hr {
+  stroke-width: 2px;
+  stroke: var(--Solid-Heading, #42446e);
+  opacity: 0.3;
+}
+
+.footer-container-down {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.footer-text-down {
+  display: flex;
+  color: var(--light-Content, #a7a7a7);
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+
+  strong {
+    background: var(
+      --Gradient-Heading,
+      linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

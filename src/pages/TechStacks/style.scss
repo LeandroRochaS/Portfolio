@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.stacks-container {
+  margin-top: 146px;
+}
+
+.stacks-title {
+  display: flex;
+  align-items: self-start;
+
+  h1 {
+    margin-bottom: 31px;
+  }
+}

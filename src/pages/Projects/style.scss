@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.projects-title {
+  display: flex;
+  align-items: self-start;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+}
+
+.projects-content {
+  margin-top: 105px;
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.about-title {
+  color: #ccc;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 123.81% */
+  letter-spacing: -0.4px;
+  margin-bottom: 38px;
+}
+
+.about-title-primary {
+  margin-top: 143px;
+}
+.about-container {
+  max-width: 750px;
+}
+
+.about-text {
+  color: #a7a7a7;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}

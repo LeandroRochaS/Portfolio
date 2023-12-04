@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.stacks-container {
+  margin-top: 348px;
+}
+
+.stacks-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  h1 {
+    color: $port-font-for;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 49px;
+  }
+
+  p {
+    color: $port-font-third;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+
+.stacks-content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se movam para a linha seguinte quando não há espaço suficiente */
+  gap: 100px;
+
+  margin-top: 153px;
+  margin-bottom: 253px;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Cria 5 colunas iguais */
+
+    li {
+      display: flex; /* Garante que as imagens dentro de cada li sigam na mesma linha */
+      margin-right: 100px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

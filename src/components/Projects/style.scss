@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  h1 {
+    color: $port-font-for;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 49px;
+  }
+
+  p {
+    color: $port-font-third;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+
+.projects-content {
+  margin-top: 105px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
+  gap: 100px;
+}

@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-primary {
+  background: var(
+    --Gradient-Heading,
+    linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* Adicionando suporte para navegadores mais antigos baseados no motor WebKit */
+  color: transparent;
+  font-size: 32px;
+}
+
+.nav-items {
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    li {
+      margin-right: 50px;
+      font-size: 20px;
+      color: $port-font-primary;
+      font-weight: 500;
+      line-height: 26px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          // Adicionar estilos ao passar o mouse sobre o link
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.links {
+  color: $port-font-primary;
+  text-decoration: none;
+}
+
+.nav-icons {
+  cursor: pointer;
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+  }
+}
