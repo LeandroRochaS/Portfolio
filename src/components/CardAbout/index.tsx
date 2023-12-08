@@ -41,7 +41,7 @@ export default function CardAbout({
         </div>
         <div className="card-about-right">
           <div className="card-about-right-up">
-            <p className="skill">{time}</p>
+            <p className="skill-about">{time}</p>
           </div>
           <div className="card-about-right-down">
             <svg
