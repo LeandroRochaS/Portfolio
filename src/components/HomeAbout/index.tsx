@@ -7,8 +7,8 @@ export default function HomeAbout() {
         <div className="home-about-left">
           <p>Hi 👋,</p>
           <p>My name is </p>
-          <p className="title-secundary">Leandro Rocha S</p>
-          <p>Full-stack developer</p>
+          <p className="title-secondary">Leandro Rocha S</p>
+          <p className="ocupation">Full-stack developer</p>
         </div>
 
         <div className="home-about-right">

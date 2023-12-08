@@ -1,3 +1,5 @@
+import ImageWithTooltip from "../../utils/ImageWithTooltip"; // Certifique-se de ajustar o caminho conforme necessário
+import "./style.scss";
 import "./style.scss";
 import bootstrap from "../../../public/images/svgs/bootstrap.svg";
 import css3 from "../../../public/images/svgs/css3.svg";
@@ -11,7 +13,6 @@ import react from "../../../public/images/svgs/react.svg";
 import spring from "../../../public/images/svgs/spring.svg";
 import type from "../../../public/images/svgs/typescript.svg";
 import sass from "../../../public/images/svgs/sass.svg";
-
 export default function Stacks() {
   return (
     <>
@@ -24,47 +25,79 @@ export default function Stacks() {
         <div className="stacks-content">
           <ul>
             <li>
-              <img src={html5} />
+              <ImageWithTooltip
+                imageName="HTML5"
+                svg={<img src={html5} alt="HTML5" />}
+              />
             </li>
             <li>
-              <img src={css3} />
+              <ImageWithTooltip
+                imageName="CSS3"
+                svg={<img src={css3} alt="CSS3" />}
+              />
             </li>
             <li>
-              <img src={type} />
+              <ImageWithTooltip
+                imageName="TypeScript"
+                svg={<img src={type} alt="TypeScript" />}
+              />
             </li>
             <li>
-              <img src={spring} />
+              <ImageWithTooltip
+                imageName="Spring"
+                svg={<img src={spring} alt="Spring" />}
+              />
             </li>
-
             <li>
-              <img src={react} />
+              <ImageWithTooltip
+                imageName="React"
+                svg={<img src={react} alt="React" />}
+              />
             </li>
             <li>
-              <img src={bootstrap} />
+              <ImageWithTooltip
+                imageName="Bootstrap"
+                svg={<img src={bootstrap} alt="Bootstrap" />}
+              />
             </li>
           </ul>
           <ul>
             <li>
-              <img src={java} />
+              <ImageWithTooltip
+                imageName="Java"
+                svg={<img src={java} alt="Java" />}
+              />
             </li>
             <li>
-              <img src={sass} />
+              <ImageWithTooltip
+                imageName="Sass"
+                svg={<img src={sass} alt="Sass" />}
+              />
             </li>
             <li>
-              <img src={git} />
+              <ImageWithTooltip
+                imageName="Git"
+                svg={<img src={git} alt="Git" />}
+              />
             </li>
             <li>
-              <img src={python} />
+              <ImageWithTooltip
+                imageName="Python"
+                svg={<img src={python} alt="Python" />}
+              />
             </li>
-
             <li>
-              <img src={dotnet} />
+              <ImageWithTooltip
+                imageName="Dotnet"
+                svg={<img src={dotnet} alt="Dotnet" />}
+              />
             </li>
             <li>
-              <img src={php} />
+              <ImageWithTooltip
+                imageName="PHP"
+                svg={<img src={php} alt="php" />}
+              />
             </li>
-
-            {/* Adicione outros itens conforme necessário */}
           </ul>
         </div>
       </div>

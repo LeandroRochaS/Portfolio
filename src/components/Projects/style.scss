@@ -27,4 +27,27 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
   gap: 100px;
+
+  max-width: 100%; /* Adicione isso para garantir que a largura não ultrapasse a tela */
+}
+
+@media (max-width: 1200px) and (min-width: 330px) {
+  .projects-title {
+    width: 100%;
+
+    p {
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .projects-content {
+    grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
+  }
 }

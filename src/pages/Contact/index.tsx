@@ -9,7 +9,13 @@ export default function ContactPage() {
       <div className="contact">
         <div className="contact-main">
           <p>For any questions please mail us:</p>
-          <p className="contact-title-secundary">lerocha644@gmail.com</p>
+          <a
+            className="contact-title-secundary"
+            href="mailto:lerocha644@gmail.com"
+          >
+            {" "}
+            lerocha644@gmail.com
+          </a>
         </div>
       </div>
       <Footer />

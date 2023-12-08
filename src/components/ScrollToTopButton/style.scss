@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.scroll-to-top-button {
+  position: fixed;
+  padding: 0.2rem 0.6rem;
+  font-size: 20px;
+  bottom: 20px;
+  right: 40px;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  cursor: pointer; /* Adicionado cursor pointer para indicar que é interativo */
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top-button:hover {
+  background: $port-font-two;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top-button {
+    display: none;
+  }
+}

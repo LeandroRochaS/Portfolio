@@ -1,46 +1,94 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function NavBar() {
+  const [open, setOpen] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Atualiza o estado com base na largura da janela
+      const isMobile = window.innerWidth < 768;
+      setOpen(isMobile);
+      setShowButton(isMobile);
+    };
+
+    // Adiciona o ouvinte de evento para redimensionamento da janela
+    window.addEventListener("resize", handleResize);
+
+    // Verificação inicial no momento da montagem do componente
+    handleResize();
+
+    // Função de limpeza para remover o ouvinte de evento
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // JSX para os links de navegação
+  const navigationLinks = (
+    <ul>
+      <li>
+        <Link className="links" to={"/Home"}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="links" to={"/About"}>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link className="links" to={"/TechStacks"}>
+          Tech Stack
+        </Link>
+      </li>
+      <li>
+        <Link className="links" to={"/Projects"}>
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link className="links" to={"/Contact"}>
+          Contact
+        </Link>
+      </li>
+    </ul>
+  );
+
+  // JSX para o componente NavBar
   return (
     <>
       <nav className="nav-container">
-        <div>
+        <div className="nav-title-menu">
+          {/* Brand/logo */}
           <Link className="links" to={"/"}>
             <h1 className="title-primary"> LeandroRocha.</h1>
           </Link>
+
+          {/* Exibe o botão apenas abaixo de 768 pixels */}
+          {showButton && (
+            <button
+              className="nav-button"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <img src="../../../public/images/svgs/menu.svg" alt="Menu" />
+              {open ? "Close" : "Menu"}
+            </button>
+          )}
         </div>
-        <div className="nav-items">
-          <ul>
-            <li>
-              <a>
-                <Link className="links" to={"/Home"}>
-                  Home
-                </Link>
-              </a>
-            </li>
-            <li>
-              <Link className="links" to={"/About"}>
-                <a>About </a>
-              </Link>
-            </li>
-            <li>
-              <Link className="links" to={"/TechStacks"}>
-                <a>Tech Stack </a>
-              </Link>
-            </li>
-            <li>
-              <Link className="links" to={"/Projects"}>
-                <a>Projects </a>
-              </Link>
-            </li>
-            <li>
-              <Link className="links" to={"/Contact"}>
-                <a>Contact </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+
+        {/* Exibe os links de navegação diretamente acima de 768 pixels */}
+        {window.innerWidth > 768 && (
+          <div className="nav-items">{navigationLinks}</div>
+        )}
+
+        {/* Exibe os links de navegação dentro do menu abaixo de 768 pixels */}
+        {open && <div className="nav-items">{navigationLinks}</div>}
+
         <div className="nav-icons">
           <a href="https://github.com/LeandroRochaS" target="_blank">
             <svg

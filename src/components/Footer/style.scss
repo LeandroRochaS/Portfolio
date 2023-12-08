@@ -29,13 +29,13 @@
       width: 200px;
       margin-right: 20px;
       font-size: 20px;
-      color: $port-font-primary;
       font-weight: 500;
       line-height: 26px;
       cursor: pointer;
 
       a {
         text-decoration: none;
+        color: $port-font-primary;
 
         &:hover {
           // Adicionar estilos ao passar o mouse sobre o link
@@ -50,7 +50,6 @@
   ul {
     list-style: none;
     display: flex;
-    padding: 0;
 
     li {
       margin-right: 50px;
@@ -66,6 +65,7 @@
         &:hover {
           // Adicionar estilos ao passar o mouse sobre o link
           text-decoration: underline;
+          margin-bottom: 5px;
         }
       }
     }
@@ -74,10 +74,16 @@
 
 .nav-icons {
   cursor: pointer;
+
   svg {
     width: 30px;
     height: 30px;
     margin-right: 25px;
+    transform: all 600m;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -118,5 +124,50 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer-title {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .nav-items-up {
+    text-align: center;
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .nav-items-down {
+    display: none;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .footer-container-down {
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer-text-down {
+    margin-bottom: 20px;
   }
 }

@@ -2,6 +2,8 @@
 
 .home-about {
   display: flex;
+  max-width: 100%;
+  width: 100%;
   height: 350px;
   padding-top: 19px;
   justify-content: center;
@@ -11,30 +13,30 @@
 }
 
 .home-about-left {
-  line-height: 10px;
+  max-width: 50%;
+  width: 100%;
 
   color: $port-font-third;
-  width: 632.302px;
   color: #d9d9d9;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   font-size: 58px;
+  line-height: 5px;
 }
 
-.title-secundary {
-  background: var(
-    --Gradient-Heading,
-    linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text; /* Adicionando suporte para navegadores mais antigos baseados no motor WebKit */
+.title-secondary {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+  -webkit-background-clip: text;
   color: transparent;
-  padding: 20px 0px;
+  padding: 20px 0;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .home-about-right {
-  width: 346.971px;
+  max-width: 346.971px;
+  width: 100%;
   height: 349px;
   flex-shrink: 0;
 
@@ -42,9 +44,39 @@
   border: 9px solid #e70faa;
 
   img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     border-radius: 230px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 330px) {
+  .home-about {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15rem;
+  }
+  .home-about-left {
+    max-width: 90%;
+    text-align: center;
+    p {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  .title-secundary {
+    font-size: 2.5rem;
+    line-height: 0.3;
+  }
+
+  .home-about-right {
+    width: 80%;
+    margin-bottom: 10rem;
+  }
+
+  .ocupation {
+    line-height: 0.7; /* Ajuste a altura da linha conforme necessário */
   }
 }
