@@ -9,7 +9,7 @@ export default function NavBar() {
   useEffect(() => {
     const handleResize = () => {
       // Atualiza o estado com base na largura da janela
-      const isMobile = window.innerWidth < 768;
+      const isMobile = window.innerWidth < 900;
       setOpen(isMobile);
       setShowButton(isMobile);
     };
@@ -62,7 +62,6 @@ export default function NavBar() {
     <>
       <nav className="nav-container">
         <div className="nav-title-menu">
-          {/* Brand/logo */}
           <Link className="links" to={"/"}>
             <h1 className="title-primary"> LeandroRocha.</h1>
           </Link>
@@ -73,16 +72,16 @@ export default function NavBar() {
               className="nav-button"
               onClick={() => {
                 setOpen(!open);
+                console.log(open);
               }}
             >
               <img src="../../../public/images/svgs/menu.svg" alt="Menu" />
-              {open ? "Close" : "Menu"}
             </button>
           )}
         </div>
 
         {/* Exibe os links de navegação diretamente acima de 768 pixels */}
-        {window.innerWidth > 768 && (
+        {window.innerWidth > 900 && (
           <div className="nav-items">{navigationLinks}</div>
         )}
 
