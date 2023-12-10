@@ -31,7 +31,7 @@ export const projetos: {
       "Simple HTML and CSS calculator project for basic arithmetic operations. Provides a user-friendly interface for straightforward calculations.",
     skills: ["HTML", "CSS", "JavaScript"],
     linkRepo: "https://github.com/LeandroRochaS/CalculadoraS",
-    linkLive: "https://github.com/LeandroRochaS/CalculadoraS/releases/tag/Page",
+    linkLive: "https://calculadoraleandrorochas.netlify.app/",
   },
   {
     img: "../../public/images/projects/cardapio.png",
