@@ -72,7 +72,7 @@
   }
 }
 
-.nav-icons {
+.nav-icons-footer {
   cursor: pointer;
 
   svg {
@@ -157,8 +157,8 @@ hr {
     display: none;
   }
 
-  .nav-icons {
-    display: none;
+  .nav-icons-footer {
+    display: flex;
   }
 
   .footer-container-down {

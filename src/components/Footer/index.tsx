@@ -19,7 +19,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="nav-icons">
+          <div className="nav-icons-footer">
             <a href="https://github.com/LeandroRochaS" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
