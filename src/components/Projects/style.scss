@@ -25,7 +25,7 @@
 .projects-content {
   margin-top: 105px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 100px;
 
   max-width: 100%; /* Adicione isso para garantir que a largura não ultrapasse a tela */
@@ -49,5 +49,6 @@
 
   .projects-content {
     grid-template-columns: repeat(auto-fill, minmax(281px, 1fr));
+    margin: 0 10px;
   }
 }
