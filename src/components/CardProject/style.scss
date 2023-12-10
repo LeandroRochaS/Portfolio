@@ -17,6 +17,8 @@
     height: 260px;
     flex-shrink: 0;
     border-radius: 20px 23px 0px 0px;
+    background-size: contain;
+    object-fit: cover;
   }
 }
 
