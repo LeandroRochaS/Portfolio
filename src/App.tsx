@@ -6,6 +6,7 @@ import TechStacksPage from "./pages/TechStacks";
 import ProjectsPage from "./pages/Projects";
 import ContactPage from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
+import Page404 from "./pages/Error";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Projects" element={<ProjectsPage />} />
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/About" element={<AboutMe />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
