@@ -4,28 +4,26 @@ import { useEffect, useState } from "react";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(window.innerWidth < 900);
 
   useEffect(() => {
     const handleResize = () => {
-      // Atualiza o estado com base na largura da janela
       const isMobile = window.innerWidth < 900;
-      setOpen(isMobile);
+      setOpen(!isMobile); // Fecha automaticamente a barra de navegação ao mudar para desktop
       setShowButton(isMobile);
-    };
+    }; // Função para fechar a barra de navegação ao mudar para desktop
 
-    // Adiciona o ouvinte de evento para redimensionamento da janela
     window.addEventListener("resize", handleResize);
-
-    // Verificação inicial no momento da montagem do componente
     handleResize();
 
-    // Função de limpeza para remover o ouvinte de evento
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  function handleOpenMenu() {
+    setOpen(!open);
+  }
   // JSX para os links de navegação
   const navigationLinks = (
     <ul>
@@ -57,7 +55,6 @@ export default function NavBar() {
     </ul>
   );
 
-  // JSX para o componente NavBar
   return (
     <>
       <nav className="nav-container">
@@ -65,28 +62,19 @@ export default function NavBar() {
           <Link className="links" to={"/"}>
             <h1 className="title-primary"> LeandroRocha.</h1>
           </Link>
-
-          {/* Exibe o botão apenas abaixo de 768 pixels */}
           {showButton && (
-            <button
-              className="nav-button"
-              onClick={() => {
-                setOpen(!open);
-                console.log(open);
-              }}
-            >
-              <img src="../../../public/images/svgs/menu.svg" alt="Menu" />
+            <button className="nav-button" onClick={handleOpenMenu}>
+              <img
+                className={`button-nav ${open ? "button-open" : ""}`}
+                src="../../../public/images/svgs/menu.svg"
+                alt="Menu"
+              />
             </button>
           )}
         </div>
-
-        {/* Exibe os links de navegação diretamente acima de 768 pixels */}
-        {window.innerWidth > 900 && (
-          <div className="nav-items">{navigationLinks}</div>
-        )}
-
-        {/* Exibe os links de navegação dentro do menu abaixo de 768 pixels */}
-        {open && <div className="nav-items">{navigationLinks}</div>}
+        <div className={`nav-items ${open ? "open" : "close"}`}>
+          {navigationLinks}
+        </div>
 
         <div className="nav-icons">
           <a href="https://github.com/LeandroRochaS" target="_blank">
