@@ -6,8 +6,8 @@
   font-size: 20px;
   bottom: 20px;
   right: 40px;
-  background-color: gray;
   color: #fff;
+  background-color: gray;
   text-align: center;
   cursor: pointer; /* Adicionado cursor pointer para indicar que é interativo */
   border: none;
@@ -19,6 +19,10 @@
 .scroll-to-top-button:hover {
   background: $port-font-two;
   opacity: 0.5;
+}
+
+.display-none {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
