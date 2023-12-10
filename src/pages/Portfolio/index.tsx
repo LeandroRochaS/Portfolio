@@ -13,10 +13,10 @@ export default function PortifolioPage() {
 
       <HomeAbout />
 
-      <ScrollToTopButton />
       <Stacks />
       <Projects />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }
