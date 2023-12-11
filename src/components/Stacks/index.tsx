@@ -1,18 +1,18 @@
 import ImageWithTooltip from "../../utils/ImageWithTooltip"; // Certifique-se de ajustar o caminho conforme necessário
 import "./style.scss";
-import "./style.scss";
-import bootstrap from "../../../public/images/svgs/bootstrap.svg";
-import css3 from "../../../public/images/svgs/css3.svg";
-import dotnet from "../../../public/images/svgs/dotnet.svg";
-import git from "../../../public/images/svgs/git.svg";
-import html5 from "../../../public/images/svgs/html5.svg";
-import java from "../../../public/images/svgs/java.svg";
-import php from "../../../public/images/svgs/php.svg";
-import python from "../../../public/images/svgs/python.svg";
-import react from "../../../public/images/svgs/react.svg";
-import spring from "../../../public/images/svgs/spring.svg";
-import type from "../../../public/images/svgs/typescript.svg";
-import sass from "../../../public/images/svgs/sass.svg";
+
+import bootstrap from "../../assets/images/svgs/bootstrap.svg";
+import css3 from "../../assets/images/svgs/css3.svg";
+import dotnet from "../../assets/images/svgs/dotnet.svg";
+import git from "../../assets/images/svgs/git.svg";
+import html5 from "../../assets/images/svgs/bootstrap.svg";
+import java from "../../assets/images/svgs/java.svg";
+import php from "../../assets/images/svgs/php.svg";
+import python from "../../assets/images/svgs/python.svg";
+import react from "../../assets/images/svgs/react.svg";
+import spring from "../../assets/images/svgs/spring.svg";
+import typescript from "../../assets/images/svgs/typescript.svg";
+import sass from "../../assets/images/svgs/sass.svg";
 export default function Stacks() {
   return (
     <>
@@ -39,7 +39,7 @@ export default function Stacks() {
             <li>
               <ImageWithTooltip
                 imageName="TypeScript"
-                svg={<img src={type} alt="TypeScript" />}
+                svg={<img src={typescript} alt="TypeScript" />}
               />
             </li>
             <li>

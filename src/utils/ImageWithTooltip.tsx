@@ -5,8 +5,12 @@ const SvgWrapper = styled.div`
   position: relative;
   display: inline-block;
 `;
+type TooltipProps = {
+  isVisible: boolean;
+  children: React.ReactNode;
+};
 
-const Tooltip = styled.div`
+const Tooltip = styled.div<TooltipProps>`
   position: absolute;
   top: 150%;
   left: 50%;
