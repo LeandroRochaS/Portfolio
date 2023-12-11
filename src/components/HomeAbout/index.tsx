@@ -13,6 +13,7 @@ export default function HomeAbout() {
         </div>
 
         <div className="home-about-right">
+
           <img src={foto}/>
         </div>
       </div>

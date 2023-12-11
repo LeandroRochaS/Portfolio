@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
   gap: 217.727px;
-  margin-top: 200px;
-  margin-bottom: 320px;
+  margin-top: 120px;
+  
 }
 
 .contact-main {
@@ -20,6 +20,11 @@
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
+
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+        justify-content: center;
 }
 
 .contact-title-secundary {
@@ -44,8 +49,7 @@
 
     gap: 0px;
 
-    margin-top: 200px;
-    margin-bottom: 320px;
+    margin-top: 130px;
 
   }
 

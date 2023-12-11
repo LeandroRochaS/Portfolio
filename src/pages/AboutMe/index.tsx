@@ -35,12 +35,7 @@ export default function AboutMe() {
               institute="Company Name"
               time="Time worked"
             />{" "}
-            <CardAbout
-              title="Waiting for an opportunity"
-              yearsWorked="Jan 0000 - Dec 0000"
-              institute="Company Name"
-              time="Time worked"
-            />
+         
           </div>
           <div className="about-education">
             <h1 className="about-title">Education</h1>
@@ -50,9 +45,30 @@ export default function AboutMe() {
               institute="University Tiradentes"
               time="In Progress"
             />
+            <CardAbout
+              title="Full-Stack Developer"
+              yearsWorked="Dec 2023 - May 2024"
+              institute="Senai"
+              time="In Progress"
+            />
+            </div>
           </div>
-        </div>
-      </div>
+          <div className="about-education">
+            <h1 className="about-title">Courses</h1>
+            <CardAbout
+              title="Banco PAN Java Developer"
+              yearsWorked="Aug 2022 - Oct 2023"
+              institute="Dio"
+              time="Finished"
+            />
+            <CardAbout
+              title="CS50: Computer Science"
+              yearsWorked="Feb 2023 - Apr 2023"
+              institute="Havard"
+              time="Finished"
+            />
+            </div>
+          </div>
     </>
   );
 }
