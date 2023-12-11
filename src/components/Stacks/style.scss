@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 220px) {
+@media (max-width: 1200px) and (min-width: 0px) {
   .stacks-title {
     text-align: center;
 
@@ -73,3 +73,12 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 360px){
+  .stacks-content {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+} 
