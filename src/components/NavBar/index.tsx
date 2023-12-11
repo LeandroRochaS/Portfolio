@@ -1,6 +1,7 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import iconButton from "../../assets/images/svgs/menu.svg" 
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -66,7 +67,7 @@ export default function NavBar() {
             <button className="nav-button" onClick={handleOpenMenu}>
               <img
                 className={`button-nav ${open ? "button-open" : ""}`}
-                src="../../../public/images/svgs/menu.svg"
+                src={iconButton}
                 alt="Menu"
               />
             </button>

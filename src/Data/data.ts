@@ -1,3 +1,12 @@
+import gitfind from "../assets/images/projects/gitfind.png";
+import calculadora from "../assets/images/projects/calculadora.png";
+import cardapio from "../assets/images/projects/cardapio.png";
+import todolist from "../assets/images/projects/todolist.png";
+import ecommerce from "../assets/images/projects/ecommerce.png";
+import ViaCep from "../assets/images/projects/ViaCep.png"
+import clock from "../assets/images/projects/clock.png"
+import tempoAgora from "../assets/images/projects/tempoAgora.png";
+
 export const projetos: {
   img: string;
   title: string;
@@ -7,7 +16,7 @@ export const projetos: {
   linkLive: string;
 }[] = [
   {
-    img: "../../public/images/projects/gitfind.png",
+    img: gitfind,
     title: "GitFind",
     description:
       "GitFind: Input a GitHub username, get name, description, and repositories. Features light and dark modes for user customization.",
@@ -17,7 +26,7 @@ export const projetos: {
   },
 
   {
-    img: "../../public/images/projects/calculadora.png",
+    img: calculadora,
     title: "Calculator",
     description:
       "Simple HTML and CSS calculator project for basic arithmetic operations. Provides a user-friendly interface for straightforward calculations.",
@@ -26,7 +35,7 @@ export const projetos: {
     linkLive: "https://calculadoraleandrorochas.netlify.app/",
   },
   {
-    img: "../../public/images/projects/cardapio.png",
+    img: cardapio,
     title: "Menu",
     description:
       "Simplified menu project with the ability to register food options. Streamlines the management and updating of menu items in an intuitive manner.",
@@ -35,7 +44,7 @@ export const projetos: {
     linkLive: "https://cardapio2.vercel.app/",
   },
   {
-    img: "../../public/images/projects/todolist.png",
+    img: todolist,
     title: "To Do List",
     description:
       "A website for creating to-do lists, allowing users to easily add, edit, or delete tasks. Simplifies task management with an intuitive and customizable interface.",
@@ -44,7 +53,7 @@ export const projetos: {
     linkLive: "https://to-do-list-alpha-ten-76.vercel.app/",
   },
   {
-    img: "../../public/images/projects/ecommerce.png",
+    img: ecommerce,
     title: "DSCommerce",
     description:
       "Ecommerce with login, product and customer registration Allows users to make online purchases and administrators to manage the website.",
@@ -53,7 +62,7 @@ export const projetos: {
     linkLive: "/building",
   },
   {
-    img: "../../public/images/projects/ViaCep.png",
+    img: ViaCep,
     title: "ViaCep",
     description:
       "The website integrates the Viacep API, enabling quick retrieval of location information by entering a postal code. Relevant data is efficiently retrieved and presented to users.",
@@ -62,7 +71,7 @@ export const projetos: {
     linkLive: "https://via-cep-phi.vercel.app/",
   },
   {
-    img: "../../public/images/projects/tempoAgora.png",
+    img: tempoAgora,
     title: "TempoAgora",
     description:
       "Using the OpenWeather API, this project quickly provides real-time weather information for a specified city.",
@@ -71,7 +80,7 @@ export const projetos: {
     linkLive: "https://tempo-hoje-psi.vercel.app/",
   },
   {
-    img: "../../public/images/projects/clock.png",
+    img: clock,
     title: "Clock",
     description:
       "Using vanilla javascript, this project quickly provides real-time date and time according to the user's time zone.",

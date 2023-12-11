@@ -1,4 +1,5 @@
 import "./style.scss";
+import foto from "../../assets/images/foto.png"
 
 export default function HomeAbout() {
   return (
@@ -12,7 +13,7 @@ export default function HomeAbout() {
         </div>
 
         <div className="home-about-right">
-          <img src="../../../public/images/foto.png" />
+          <img src={foto}/>
         </div>
       </div>
     </>
