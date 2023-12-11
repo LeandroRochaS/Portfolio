@@ -88,8 +88,8 @@ export default function Stacks() {
             </li>
             <li>
               <ImageWithTooltip
-                imageName="Dotnet"
-                svg={<img src={dotnet} alt="Dotnet" />}
+                imageName="DotNet"
+                svg={<img src={dotnet} alt="DotNet" />}
               />
             </li>
             <li>
